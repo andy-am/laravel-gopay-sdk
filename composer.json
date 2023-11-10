@@ -1,25 +1,31 @@
 {
-    "name": "hazestudio/laravel-gopay-sdk",
+    "name": "andy-am/laravel-gopay-sdk",
     "description": "GoPay SDK integration with Laravel Framework",
     "type": "library",
     "require": {
-        "php": "^7.2",
-        "illuminate/support": ">=5.0|^6.0",
-        "illuminate/config": ">=5.0|^6.0",
-        "illuminate/cache": ">=5.0|^6.0",
-        "illuminate/container": ">=5.0|^6.0",
+        "php": "^8.2",
+        "illuminate/support": "^10.0",
+        "illuminate/config": "^10.0",
+        "illuminate/cache": "^10.0",
+        "illuminate/container": "^10.0",
         "gopay/payments-sdk-php": "^1.1"
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "stable",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "HazeStudio\\LaravelGoPaySDK\\": "src/"
+            "AndyAm\\LaravelGoPaySDK\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Haze Studio",
-            "email": "studio@haze.sk"
+            "name": "Andy",
+            "email": "andy-am"
         }
     ]
 }
