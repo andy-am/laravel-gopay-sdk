@@ -6,7 +6,7 @@
  */
 
 namespace AndyAm\LaravelGoPaySDK;
-
+use GoPay\GoPay;
 use GoPay\Http\Log\Logger as DefLogger;
 use GoPay\Http\Request;
 use GoPay\Http\Response;

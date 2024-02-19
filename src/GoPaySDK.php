@@ -1,13 +1,9 @@
 <?php
-/**
- * Created by Damián Imrich / Haze Studio.
- * Date: 22.11.2016
- * Time: 14:54
- */
+
 
 namespace AndyAm\LaravelGoPaySDK;
 
-use GoPay;
+use GoPay\GoPay;
 use AndyAm\LaravelGoPaySDK\Events\PaymentCreated;
 
 class GoPaySDK
