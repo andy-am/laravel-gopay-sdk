@@ -32,7 +32,7 @@ class GopayServiceProvider extends ServiceProvider
         }
         
         $this->mergeConfigFrom(
-            __DIR__ . '/../config.php', 'gopay'
+            __DIR__ . '/../config/config.php', 'gopay'
         );
         
         $this->app->singleton('GopaySDK', function ($app) {
