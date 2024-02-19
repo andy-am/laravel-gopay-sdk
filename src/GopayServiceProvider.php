@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Damián Imrich / Haze Studio.
- * Date: 22.11.2016
- * Time: 14:45
- */
+
 
 namespace AndyAm\LaravelGoPaySDK;
 
@@ -36,7 +32,7 @@ class GopayServiceProvider extends ServiceProvider
         }
         
         $this->mergeConfigFrom(
-            __DIR__ . '/config.php', 'gopay'
+            __DIR__ . '/../config.php', 'gopay'
         );
         
         $this->app->singleton('GopaySDK', function ($app) {
