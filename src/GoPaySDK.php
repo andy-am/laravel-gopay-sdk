@@ -3,7 +3,7 @@
 
 namespace AndyAm\LaravelGoPaySDK;
 
-use GoPay\GoPay;
+use GoPay;
 use AndyAm\LaravelGoPaySDK\Events\PaymentCreated;
 
 class GoPaySDK
