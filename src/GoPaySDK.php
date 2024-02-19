@@ -30,8 +30,8 @@ class GoPaySDK
             'isProductionMode' => !filter_var(getenv('APP_DEBUG'), FILTER_VALIDATE_BOOLEAN),
             'timeout' => config('gopay.timeout'),
             'gatewayUrl' => config('gopay.gatewayUrl'),
-            'scope' => GoPay\Definition\TokenScope::ALL,
-            'language' => GoPay\Definition\Language::SLOVAK,
+            'scope' => 'ALL',
+            'language' => 'SK',
         ];
 
         $fallback = config('app.fallback_locale');
