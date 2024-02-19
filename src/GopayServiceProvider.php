@@ -20,10 +20,10 @@ class GopayServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config.php' => config_path('gopay.php'),
+            __DIR__ . '/../config/config.php' => config_path('gopay.php'),
         ]);
     }
-
+    
     /**
      * Register the application services.
      *
@@ -31,10 +31,10 @@ class GopayServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if(is_dir($vendor = __DIR__.'/../vendor')){
-            require_once $vendor.'/autoload.php';
+        if (is_dir($vendor = __DIR__ . '/../vendor')) {
+            require_once $vendor . '/autoload.php';
         }
-
+        
         $this->mergeConfigFrom(
             __DIR__ . '/config.php', 'gopay'
         );
