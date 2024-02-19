@@ -5,7 +5,7 @@
  * Time: 14:45
  */
 
-namespace HazeStudio\LaravelGoPaySDK;
+namespace AndyAm\LaravelGoPaySDK;
 
 use HazeStudio\LaravelGoPaySDK\Events\PaymentCreated;
 use Illuminate\Support\ServiceProvider;
@@ -20,7 +20,7 @@ class GopayServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config.php' => config_path('gopay.php'),
+            __DIR__ . '/config.php' => config_path('gopay.php'),
         ]);
     }
 
@@ -36,7 +36,7 @@ class GopayServiceProvider extends ServiceProvider
         }
 
         $this->mergeConfigFrom(
-            __DIR__.'/config.php', 'gopay'
+            __DIR__ . '/config.php', 'gopay'
         );
         
         $this->app->singleton('GopaySDK', function ($app) {

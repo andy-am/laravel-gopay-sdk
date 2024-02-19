@@ -5,7 +5,7 @@
  * Time: 13:19
  */
 
-namespace HazeStudio\LaravelGoPaySDK;
+namespace AndyAm\LaravelGoPaySDK;
 
 use GoPay\Http\Log\Logger as DefLogger;
 use GoPay\Http\Request;
@@ -15,6 +15,11 @@ class Logger implements DefLogger
 {
     public function logHttpCommunication(Request $request, Response $response)
     {
-        \GoPay::logHttpCommunication($request, $response);
+        GoPay::logHttpCommunication($request, $response);
+    }
+    
+    public function log($message)
+    {
+        GoPay::log($message);
     }
 }
