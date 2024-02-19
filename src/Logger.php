@@ -15,11 +15,12 @@ class Logger implements DefLogger
 {
     public function logHttpCommunication(Request $request, Response $response)
     {
-        GoPay::logHttpCommunication($request, $response);
+        $msg = "{$request->method} {$request->url} -> {$response->statusCode}";
+        $this->log($msg);
     }
     
-    public function log($message)
+    public function log(string $message)
     {
-        GoPay::log($message);
+        Log::info("$message\n");
     }
 }
